@@ -78,17 +78,6 @@ class TransferCommand(PluginCommand):
 
         VERBOSE(arguments)
 
-        # Following code is added to include transfer command location in
-        # PYTHONPATH. It is required so that PyCharm can import transfer
-        # providers with cloudmesh coding standards.
-
-        # pprint(sys.path)
-        try:
-            sys.path.insert(0,
-            r"c:\study\iumsds\fall2019\cloudcomputing\fa19-516-155\cloudmesh-transfer")
-        except Exception as e:
-            print("PYTHONPATH not updated.")
-
         # Extract source and target details from the arguments
         if arguments.source:
             source_CSP, source_obj = arguments.source.split(':')
