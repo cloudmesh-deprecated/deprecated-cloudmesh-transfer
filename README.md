@@ -18,6 +18,7 @@ Manual:
 
 * https://github.com/cloudmesh-community/fa19-516-155/blob/master/project/transfer.md
 
+```bash
 Usage:
    transfer copy --source=awss3:source_obj --target=azure:target_obj [-r]
    transfer list --target=awss3:target_obj
@@ -66,3 +67,4 @@ Usage:
  Examples:
    transfer copy --source=awss3:sampleFileS3.txt
                  --target=azure:sampleFileBlob.txt
+```
